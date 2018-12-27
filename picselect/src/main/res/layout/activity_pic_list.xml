@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PicListActivity">
+
+    <com.example.baselibs.weight.CustomToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:back_src="@drawable/icon_back"
+        app:left_text="选择相册"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:id="@+id/rv_list" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_20">
+        <TextView
+            android:layout_width="@dimen/dimen_121"
+            android:id="@+id/tv_num"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_26"
+            android:textSize="@dimen/text_dimens12"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:layout_height="@dimen/dimen_32"
+            android:text="预览 （0/1001）"
+            android:background="@drawable/shape_cire_line_blue"
+            />
+        <Button
+            android:id="@+id/btn_uppic"
+            android:layout_width="@dimen/dimen_71"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_alignParentRight="true"
+            android:text="上传"
+            android:textSize="@dimen/text_dimens12"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_blue_cire_bg"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

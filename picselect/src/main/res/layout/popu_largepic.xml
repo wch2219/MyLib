@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <com.example.baselibs.weight.CustomToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:back_src="@drawable/icon_back"
+        app:left_text="选择相册"
+        android:id="@+id/customtoobar"
+        app:title_text_color="@color/white"
+        app:left_textcolor="@color/white"
+        android:background="@color/black"
+        app:title_text="已选择7个文件"
+        app:right_src="@drawable/icon_back"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FF131313"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_uppic"
+            android:layout_width="@dimen/dimen_71"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_alignParentRight="true"
+            android:text="上传"
+
+            android:layout_margin="@dimen/dimen_25"
+            android:textSize="@dimen/text_dimens12"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_blue_cire_bg"
+            />
+    </RelativeLayout>
+</LinearLayout>
