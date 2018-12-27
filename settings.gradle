@@ -1,1 +1,1 @@
-include ':app', ':baselibs', ':httprxjava', ':picselect'
+include ':app', ':baselibs', ':httprxjava', ':picselect', ':paylib'
