@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.android.support.constraint:constraint-layout:1.1.3'
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:design:28.0.0'
+    api 'com.nineoldandroids:library:2.4.0'
+    api 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    api 'com.gyf.immersionbar:immersionbar:2.3.2-beta01'
+    api 'com.github.yidun:captcha-android-demo:2.4.3.1'
+    //必须使用
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'org.kie.modules:com-google-code-gson:6.5.0.Final'
+    //下拉刷新
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    api 'org.greenrobot:eventbus:3.1.1'
+    api 'com.github.GrenderG:Toasty:1.3.1'
+    //butternife注解
+    implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    api 'com.facebook.fresco:fresco:1.11.0'
+    // 支持 GIF 动图，需要添加
+    api 'com.facebook.fresco:animated-gif:0.12.0'
+    api 'com.github.githubwing:DragPhotoView:1.0.1'
+    api files('libs/fastjson-1.1.34.android.jar')
+    api files('libs/java-json.jar')
+    api files('libs/nim-basesdk-5.9.0.jar')
+    api files('libs/nim-chatroom-5.9.0.jar')
+    api files('libs/nim-lucene-5.9.0.jar')
+    api files('libs/nim-lucene-5.9.0.jar')
+}
